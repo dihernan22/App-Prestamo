@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegundoActivity">
+
+    <TextView
+        android:id="@+id/textoPrestamos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solicitud de Prestamo"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:text="Registro de Credito"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoPrestamos" />
+
+    <TextView
+        android:id="@+id/textMontoCredito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Monto Credito"
+        app:layout_constraintStart_toStartOf="@+id/textRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/textRegistro" />
+
+    <EditText
+        android:id="@+id/txtMontoCredito"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/textMontoCredito"
+        app:layout_constraintTop_toBottomOf="@+id/textMontoCredito" />
+
+    <TextView
+        android:id="@+id/textInteres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:text="Interes(%)"
+        app:layout_constraintStart_toEndOf="@+id/textMontoCredito"
+        app:layout_constraintTop_toBottomOf="@+id/textRegistro" />
+
+    <TextView
+        android:id="@+id/textPlazo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="28dp"
+        android:text="Plazo"
+        app:layout_constraintStart_toEndOf="@+id/textInteres"
+        app:layout_constraintTop_toBottomOf="@+id/textRegistro" />
+
+    <EditText
+        android:id="@+id/txtPlazo"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/textPlazo"
+        app:layout_constraintTop_toBottomOf="@+id/textPlazo" />
+
+    <Spinner
+        android:id="@+id/cbInteres"
+        android:entries="@array/Interes"
+        android:layout_width="92dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/textInteres"
+        app:layout_constraintTop_toBottomOf="@+id/textInteres" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Fecha"
+        app:layout_constraintStart_toStartOf="@+id/txtMontoCredito"
+        app:layout_constraintTop_toBottomOf="@+id/txtMontoCredito" />
+
+    <EditText
+        android:id="@+id/txtFecha"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textFechaFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Fecha Finalizacion"
+        app:layout_constraintStart_toStartOf="@+id/txtFecha"
+        app:layout_constraintTop_toBottomOf="@+id/txtFecha" />
+
+    <EditText
+        android:id="@+id/txtFechaFinal"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/textFechaFinal"
+        app:layout_constraintTop_toBottomOf="@+id/textFechaFinal" />
+
+    <TextView
+        android:id="@+id/textMontoPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Monto a Pagar:"
+        app:layout_constraintStart_toStartOf="@+id/txtFechaFinal"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaFinal" />
+
+    <TextView
+        android:id="@+id/textMontoCuota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Monto por Cuota:"
+        app:layout_constraintStart_toStartOf="@+id/textMontoPagar"
+        app:layout_constraintTop_toBottomOf="@+id/textMontoPagar" />
+
+    <TextView
+        android:id="@+id/txtMontoPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:text="0.0"
+        android:textSize="28dp"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toEndOf="@+id/textMontoPagar"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaFinal" />
+
+    <TextView
+        android:id="@+id/txtMontoCuota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0.0"
+        android:textSize="28dp"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="@+id/txtMontoPagar"
+        app:layout_constraintTop_toBottomOf="@+id/txtMontoPagar" />
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Finalizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
